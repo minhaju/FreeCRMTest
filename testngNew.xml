@@ -5,6 +5,7 @@
     <classes>
       <class name="com.offbd.qa.testclasses.ProfilePageTestCases"/>
       <class name="com.offbd.qa.testclasses.ProfilePageTestCases2"/>
+	<class name="com.offbd.qa.testclasses.ProfilePageTestCases3"/>
     </classes>
   </test> <!-- OffbdTest -->
 </suite> <!-- Offbd -->

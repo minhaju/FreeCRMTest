@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+	
+<suite name="Free CRM Project">
+
+<listeners>
+		<listener class-name="com.offbd.qa.extentreports.ExtentReporterNG" />
+</listeners>
+
+  <test name="Offbd CRM Test Run">
+    <classes>
+   <!--  <class name="com.offbd.qa.testclasses.LoginPageTest"/> -->
+      <class name="com.offbd.qa.testclasses.ProfilePageTestCases">
+      	<methods>
+      		<include name="verifyHeaderTextTest"></include>
+      		<include name="verifyProfilePageTitleTest"></include>
+      		<exclude name="verifyMyOfferLink"></exclude>
+      		<exclude name="verifyAddOfferLink"></exclude>
+      		<exclude name="verifyAddInformationLink"></exclude>
+      	</methods>
+      </class>
+    <!--   <class name="com.offbd.qa.testclasses.AddOfferPageTest"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
